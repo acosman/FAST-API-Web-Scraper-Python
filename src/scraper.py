@@ -24,6 +24,5 @@ def events_of_the_day(month: str, day: int) -> List[str]:
     events = [event.get_text(strip=True) for event in raw_events]
     return events
 
-# Example usage
 events = events_of_the_day("february", 23)
 print(events)
